@@ -21,6 +21,14 @@ class MyApp extends StatelessWidget {
           surface: const Color.fromARGB(255, 42, 51, 59),
         ),
         scaffoldBackgroundColor: const Color.fromARGB(255, 50, 58, 60),
+        cardTheme: CardThemeData().copyWith(
+          color: ColorScheme.fromSeed(
+            seedColor: const Color.fromARGB(255, 147, 229, 250),
+            brightness: Brightness.dark,
+            surface: const Color.fromARGB(255, 42, 51, 59),
+          ).secondaryContainer,
+          margin: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+        ),
       ),
       home: Groceries(),
     );
